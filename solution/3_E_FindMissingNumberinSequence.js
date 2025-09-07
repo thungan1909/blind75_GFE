@@ -38,3 +38,4 @@ export default function findMissingNumberInSequence(numbers) {
 
   return expectedSum - actualSum;
 }
+

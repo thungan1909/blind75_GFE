@@ -2,6 +2,7 @@ import isBalancedBrackets from "./solution/1_E_BalancedBrackets.js";
 import findDuplicates from "./solution/2_E_FindDuplicatesinArray.js";
 import findMissingNumberInSequence from "./solution/3_E_FindMissingNumberinSequence.js";
 import maxProductSubArray from "./solution/4_M_MaximumProductinContiguousArray.js";
+import maxSumSubArray from "./solution/5_M_MaximumSuminContiguousArray.js";
 
 
 
@@ -25,6 +26,11 @@ import maxProductSubArray from "./solution/4_M_MaximumProductinContiguousArray.j
 
 
 // Q4. Maximum Product in Contiguous Array
-console.log(maxProductSubArray( [1,2,-3,5,1])) //5
-console.log(maxProductSubArray([9])) //9
-console.log(maxProductSubArray([1,2,0,-1,8,-4])) //32
+// console.log(maxProductSubArray( [1,2,-3,5,1])) //5
+// console.log(maxProductSubArray([9])) //9
+// console.log(maxProductSubArray([1,2,0,-1,8,-4])) //32
+
+// Q5. Maximum Sum in Contiguous Array
+console.log(maxSumSubArray([-1,5,-3,9,-11])); //11
+console.log(maxSumSubArray([9])); //9
+console.log(maxSumSubArray([1,2,0,-1,8,-4])); //10

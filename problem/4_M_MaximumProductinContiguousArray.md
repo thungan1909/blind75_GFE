@@ -58,3 +58,51 @@ Explanation: The subarray `[-1, 8, -4]` has the largest product i.e `32`.
 - `-10 <= numbers[i] <= 10`  
 
 
+## Dry Run – Test: [1, 2, 0, -1, 8, -4]
+
+### Initialization
+- max = 1  
+- min = 1  
+- r = 1  
+
+---
+
+### i = 1, v = 2
+- max = max(2, 1 * 2) = 2  
+- min = min(2, 1 * 2) = 2  
+- r = max(2, 1) = 2  
+
+---
+
+### i = 2, v = 0
+- max = max(0, 2 * 0) = 0  
+- min = min(0, 2 * 0) = 0  
+- r = max(2, 0) = 2  
+
+---
+
+### i = 3, v = -1
+- swap → max = 0, min = 0  
+- max = max(-1, 0 * -1) = 0  
+- min = min(-1, 0 * -1) = -1  
+- r = 2  
+
+---
+
+### i = 4, v = 8
+- max = max(8, 0 * 8) = 8  
+- min = min(8, -1 * 8) = -8  
+- r = 8  
+
+---
+
+### i = 5, v = -4
+- swap → max = -8, min = 8  
+- max = max(-4, -8 * -4) = 32  
+- min = min(-4, 8 * -4) = -32  
+- r = max(8, 32) = 32  
+
+---
+
+### ✅ Final Result
+r = **32**
