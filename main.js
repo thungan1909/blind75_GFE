@@ -1,6 +1,6 @@
-import isBalancedBrackets from "./solution/1_BalancedBrackets.js";
-import findDuplicates from "./solution/2_FindDuplicatesinArray.js";
-import findMissingNumberInSequence from "./solution/3_FindMissingNumberinSequence.js";
+import isBalancedBrackets from "./solution/1_E_BalancedBrackets.js";
+import findDuplicates from "./solution/2_E_FindDuplicatesinArray.js";
+import findMissingNumberInSequence from "./solution/3_E_FindMissingNumberinSequence.js";
 import maxProductSubArray from "./solution/4_M_MaximumProductinContiguousArray.js";
 
 
