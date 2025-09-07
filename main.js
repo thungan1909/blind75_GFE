@@ -1,6 +1,8 @@
 import isBalancedBrackets from "./solution/1_BalancedBrackets.js";
 import findDuplicates from "./solution/2_FindDuplicatesinArray.js";
 import findMissingNumberInSequence from "./solution/3_FindMissingNumberinSequence.js";
+import maxProductSubArray from "./solution/4_M_MaximumProductinContiguousArray.js";
+
 
 
 // Q1 - Balanced Brackets
@@ -17,6 +19,12 @@ import findMissingNumberInSequence from "./solution/3_FindMissingNumberinSequenc
 
 
 // Q3 - Find Missing Number in Sequence
-console.log(findMissingNumberInSequence([1, 3, 0])); // 2
-console.log(findMissingNumberInSequence([1])); // 0
-console.log(findMissingNumberInSequence([3, 0, 4, 2, 1])); // 5
+// console.log(findMissingNumberInSequence([1, 3, 0])); // 2
+// console.log(findMissingNumberInSequence([1])); // 0
+// console.log(findMissingNumberInSequence([3, 0, 4, 2, 1])); // 5
+
+
+// Q4. Maximum Product in Contiguous Array
+console.log(maxProductSubArray( [1,2,-3,5,1])) //5
+console.log(maxProductSubArray([9])) //9
+console.log(maxProductSubArray([1,2,0,-1,8,-4])) //32
