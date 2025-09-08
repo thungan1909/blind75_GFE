@@ -5,6 +5,7 @@ import maxProductSubArray from "./solution/4_M_MaximumProductinContiguousArray.j
 import maxSumSubArray from "./solution/5_M_MaximumSuminContiguousArray.js";
 import mostCommonElements from "./solution/6_M_MostCommonElements.js";
 import arrayProductExcludingCurrent from "./solution/7_M_ArrayProductExcludingCurrent.js";
+import arrayReachableEnd from "./solution/8_EndofArrayReachable.js";
 
 
 
@@ -42,7 +43,14 @@ import arrayProductExcludingCurrent from "./solution/7_M_ArrayProductExcludingCu
 // console.log(mostCommonElements([7,7,7,8,8,9,9,9], 3)); // [7, 9, 8]
 // console.log(mostCommonElements([10,10,10,10,10], 1)); // [10]
 
-// Q7. Array Product Excluding Current
-console.log(arrayProductExcludingCurrent([1,2,3])); //6,3,2]
-console.log(arrayProductExcludingCurrent([2,0,3])); //[0,6,0]
-console.log(arrayProductExcludingCurrent([0,0,-1,1])); // [0,0,0,0]
+// // Q7. Array Product Excluding Current
+// console.log(arrayProductExcludingCurrent([1,2,3])); //6,3,2]
+// console.log(arrayProductExcludingCurrent([2,0,3])); //[0,6,0]
+// console.log(arrayProductExcludingCurrent([0,0,-1,1])); // [0,0,0,0]
+
+// Q8. End of Array Reachable
+console.log(arrayReachableEnd([4, 1, 0, 0, 2, 3])); // true
+console.log(arrayReachableEnd([1, 0, 0, 0]));       // false
+console.log(arrayReachableEnd([2, 3, 1, 1, 4]));    // true
+console.log(arrayReachableEnd([3, 2, 1, 0, 4]));    // false
+console.log(arrayReachableEnd([0]));                // true (already at last index)
