@@ -4,6 +4,7 @@ import findMissingNumberInSequence from "./solution/3_E_FindMissingNumberinSeque
 import maxProductSubArray from "./solution/4_M_MaximumProductinContiguousArray.js";
 import maxSumSubArray from "./solution/5_M_MaximumSuminContiguousArray.js";
 import mostCommonElements from "./solution/6_M_MostCommonElements.js";
+import arrayProductExcludingCurrent from "./solution/7_M_ArrayProductExcludingCurrent.js";
 
 
 
@@ -36,7 +37,12 @@ import mostCommonElements from "./solution/6_M_MostCommonElements.js";
 // console.log(maxSumSubArray([9])); //9
 // console.log(maxSumSubArray([1,2,0,-1,8,-4])); //10
 
-//Q6. Most Common Elements
-console.log(mostCommonElements([4,4,4,6,6,5,5,5], 2)); // [4, 5]
-console.log(mostCommonElements([7,7,7,8,8,9,9,9], 3)); // [7, 9, 8]
-console.log(mostCommonElements([10,10,10,10,10], 1)); // [10]
+// //Q6. Most Common Elements
+// console.log(mostCommonElements([4,4,4,6,6,5,5,5], 2)); // [4, 5]
+// console.log(mostCommonElements([7,7,7,8,8,9,9,9], 3)); // [7, 9, 8]
+// console.log(mostCommonElements([10,10,10,10,10], 1)); // [10]
+
+// Q7. Array Product Excluding Current
+console.log(arrayProductExcludingCurrent([1,2,3])); //6,3,2]
+console.log(arrayProductExcludingCurrent([2,0,3])); //[0,6,0]
+console.log(arrayProductExcludingCurrent([0,0,-1,1])); // [0,0,0,0]
