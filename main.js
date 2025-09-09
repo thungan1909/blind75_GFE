@@ -6,6 +6,7 @@ import maxSumSubArray from "./solution/5_M_MaximumSuminContiguousArray.js";
 import mostCommonElements from "./solution/6_M_MostCommonElements.js";
 import arrayProductExcludingCurrent from "./solution/7_M_ArrayProductExcludingCurrent.js";
 import arrayReachableEnd from "./solution/8_EndofArrayReachable.js";
+import findInRotatedArray from "./solution/9_M_FindElementinRotatedArray.js";
 
 
 
@@ -48,9 +49,14 @@ import arrayReachableEnd from "./solution/8_EndofArrayReachable.js";
 // console.log(arrayProductExcludingCurrent([2,0,3])); //[0,6,0]
 // console.log(arrayProductExcludingCurrent([0,0,-1,1])); // [0,0,0,0]
 
-// Q8. End of Array Reachable
-console.log(arrayReachableEnd([4, 1, 0, 0, 2, 3])); // true
-console.log(arrayReachableEnd([1, 0, 0, 0]));       // false
-console.log(arrayReachableEnd([2, 3, 1, 1, 4]));    // true
-console.log(arrayReachableEnd([3, 2, 1, 0, 4]));    // false
-console.log(arrayReachableEnd([0]));                // true (already at last index)
+// // Q8. End of Array Reachable
+// console.log(arrayReachableEnd([4, 1, 0, 0, 2, 3])); // true
+// console.log(arrayReachableEnd([1, 0, 0, 0]));       // false
+// console.log(arrayReachableEnd([2, 3, 1, 1, 4]));    // true
+// console.log(arrayReachableEnd([3, 2, 1, 0, 4]));    // false
+// console.log(arrayReachableEnd([0]));                // true (already at last index)
+
+//Q9. Find Element in Rotated Array
+console.log(findInRotatedArray([0,1,2,3,4],2)); // 2
+console.log(findInRotatedArray([2,3,4,0,1],0)) //3
+console.log(findInRotatedArray([4],2)) //-1
