@@ -1,3 +1,4 @@
+import smallestInRotatedArray from "./solution/10_M_SmallestElementInRotatedSortedArray.js";
 import isBalancedBrackets from "./solution/1_E_BalancedBrackets.js";
 import findDuplicates from "./solution/2_E_FindDuplicatesinArray.js";
 import findMissingNumberInSequence from "./solution/3_E_FindMissingNumberinSequence.js";
@@ -5,7 +6,7 @@ import maxProductSubArray from "./solution/4_M_MaximumProductinContiguousArray.j
 import maxSumSubArray from "./solution/5_M_MaximumSuminContiguousArray.js";
 import mostCommonElements from "./solution/6_M_MostCommonElements.js";
 import arrayProductExcludingCurrent from "./solution/7_M_ArrayProductExcludingCurrent.js";
-import arrayReachableEnd from "./solution/8_EndofArrayReachable.js";
+import arrayReachableEnd from "./solution/8_M_EndofArrayReachable.js";
 import findInRotatedArray from "./solution/9_M_FindElementinRotatedArray.js";
 
 
@@ -56,7 +57,12 @@ import findInRotatedArray from "./solution/9_M_FindElementinRotatedArray.js";
 // console.log(arrayReachableEnd([3, 2, 1, 0, 4]));    // false
 // console.log(arrayReachableEnd([0]));                // true (already at last index)
 
-//Q9. Find Element in Rotated Array
-console.log(findInRotatedArray([0,1,2,3,4],2)); // 2
-console.log(findInRotatedArray([2,3,4,0,1],0)) //3
-console.log(findInRotatedArray([4],2)) //-1
+// //Q9. Find Element in Rotated Array
+// console.log(findInRotatedArray([0,1,2,3,4],2)); // 2
+// console.log(findInRotatedArray([2,3,4,0,1],0)) //3
+// console.log(findInRotatedArray([4],2)) //-1
+
+//Q10. Smallest element in rotated sorted array
+console.log(smallestInRotatedArray([1, 2, 3, 4]));  1
+console.log(smallestInRotatedArray([3, 4, 1, 2])); 1
+console.log(smallestInRotatedArray([6, 7, 8, -5, -4, 2])); -5
