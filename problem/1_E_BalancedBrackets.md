@@ -1,9 +1,8 @@
-# Balanced Brackets Problem
-
-Given a string `str` consisting of characters such as `'('`, `')'`, `'{'`, `'}'`, `'['` and `']'`, determine if the input string is properly **balanced**.
 
 ---
-[Reference](https://www.greatfrontend.com/interviews/study/blind75/questions/algo/array-balanced-brackets)
+[✨# Balanced Brackets Problem ](https://www.greatfrontend.com/interviews/study/blind75/questions/algo/array-balanced-brackets)
+
+Given a string `str` consisting of characters such as `'('`, `')'`, `'{'`, `'}'`, `'['` and `']'`, determine if the input string is properly **balanced**.
 ---
 
 ## Definition of Balanced
@@ -34,4 +33,23 @@ A string is considered balanced if:
 ## Examples
 
 ### Example 1
-**Input:**  
+
+**Input:** `str = "[]"`  
+**Output:** `true`  
+**Explanation:** The string contains correctly paired and ordered parentheses.  
+
+### Example 2
+**Input:** `str = "([)]"`  
+**Output:** `false`  
+**Explanation:** The string contains correctly paired but incorrectly ordered parentheses.  
+
+### Example 3
+**Input:** `str = "([]){}"`  
+**Output:** `true`  
+**Explanation:** The string contains correctly paired and ordered parentheses.  
+
+---
+
+### Constraints
+- `1 <= str.length <= 1000`  
+- The string `str` contains only the characters `(`, `)`, `{`, `}`, `[` and `]`.
