@@ -12,29 +12,29 @@ Given an array `numbers` of size `n` storing `n` different integers which fall w
 ---
 
 ## Input
-- `numbers: number[]` — An array of integers.
+- **numbers:** `number[]` → An array of integers  
 
 ---
 
 ## Examples
-
-**Example 1**  
-Input: numbers = [1, 3, 0]  
-Output: 2  
+```text
+- Example 1:
+Input: numbers = [1, 3, 0]
+Output: 2
 Explanation: The array has a size of 3, and within the range from 0 to 3, the number 2 is missing from the array.
 
-**Example 2**  
-Input: numbers = [1]  
-Output: 0  
+- Example 2:
+Input: numbers = [1]
+Output: 0
 Explanation: The array has a size of 1, and within the range from 0 to 1, the number 0 is missing from the array.
 
-**Example 3**  
-Input: numbers = [3, 0, 4, 2, 1]  
-Output: 5  
+- Example 3:
+Input: numbers = [3, 0, 4, 2, 1]
+Output: 5
 Explanation: The array has a size of 5, and within the range from 0 to 5, the number 5 is missing from the array.
-
+```
 ---
 
 ## Constraints
-- `1 <= n <= 10,000`  
-- `0 <= numbers[i] <= n`
+- 1 <= n <= 10,000
+- 0 <= numbers[i] <= n

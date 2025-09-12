@@ -1,42 +1,40 @@
-
-# [✨Find Duplicates in Array](https://www.greatfrontend.com/interviews/study/blind75/questions/algo/array-find-duplicate) 🧩
+# [✨ Find Duplicates in Array](https://www.greatfrontend.com/interviews/study/blind75/questions/algo/array-find-duplicate) 🧩
 
 ---
 
 **Difficulty:** 🟢 Easy  
 
 ---
+
 ## Problem Statement
 Given an array of integers `numbers`, determine whether the array contains any duplicate values.  
 A duplicate is defined as any number that appears more than once in the array.
 
+---
+
 ## Input
-- `numbers: number[]`: An array of integers
+- **numbers:** `number[]` → An array of integers  
+
+---
 
 ## Examples
+```text
+- Example 1:
+Input: numbers = [5,7,1,3]
+Output: false
+Explanation: All elements in the array are unique.
 
-**Input:**  
-`numbers = [5,7,1,3]`  
-**Output:**  
-`false`  
-**Explanation:** All elements in the array are unique.
+- Example 2:
+Input: numbers = [10,7,0,0,9]
+Output: true
+Explanation: 0 appears more than once.
 
----
+- Example 3:
+Input: numbers = [3,2,6,5,0,3,10,3,10,5]
+Output: true
+Explanation: 3, 5, and 10 appear more than once.
+```
 
-**Input:**  
-`numbers = [10,7,0,0,9]`  
-**Output:**  
-`true`  
-**Explanation:** 0 appears more than once.
-
----
-
-**Input:**  
-`numbers = [3,2,6,5,0,3,10,3,10,5]`  
-**Output:**  
-`true`  
-**Explanation:** 3, 5, and 10 appear more than once.
-
-## Constraints
-- 1 <= numbers.length <= 10,000  
-- -1,000,000 <= numbers[i] <= 1,000,000  
+## Constraints:
+- 1 <= numbers.length <= 10,000
+- -1,000,000 <= numbers[i] <= 1,000,000

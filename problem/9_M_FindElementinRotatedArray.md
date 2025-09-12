@@ -29,18 +29,18 @@ Develop an algorithm that runs in **O(log n)** time complexity.
 ---
 ## Examples
 
-**Example 1**  
 ```text
+-  Example 1
 Input: numbers = [0,1,2,3,4], target = 2
 Output: 2
 Explanation: The original array [0,1,2,3,4] was rotated 0 times and 2 is present at index 2.
 
-**Example 2 **  
+- Example 2  
 Input: numbers = [2,3,4,0,1], target = 0
 Output: 3
 Explanation: The original array [0,1,2,3,4] was rotated 3 times and became [2,3,4,0,1].  0 is present at index 3.
 
-**Example 3 **  
+- Example 3 
 Input: numbers = [4], target = 2
 Output: -1
 Explanation: The original array [4] was rotated 0 times. 2 is not present in the given array.
