@@ -1,8 +1,7 @@
-
----
-[✨# Balanced Brackets Problem ](https://www.greatfrontend.com/interviews/study/blind75/questions/algo/array-balanced-brackets)
+# [✨ Balanced Brackets Problem](https://www.greatfrontend.com/interviews/study/blind75/questions/algo/array-balanced-brackets)
 
 Given a string `str` consisting of characters such as `'('`, `')'`, `'{'`, `'}'`, `'['` and `']'`, determine if the input string is properly **balanced**.
+
 ---
 
 ## Definition of Balanced
