@@ -1,7 +1,12 @@
-# Find Missing Number in Sequence
-[Link](https://www.greatfrontend.com/interviews/study/blind75/questions/algo/array-find-missing-number-in-sequence)
+# [✨ Find Missing Number in Sequence](https://www.greatfrontend.com/interviews/study/blind75/questions/algo/array-find-missing-number-in-sequence) 🧩
 
-## Problem
+---
+
+**Difficulty:** 🟢 Easy  
+
+---
+
+## Problem Statement
 Given an array `numbers` of size `n` storing `n` different integers which fall within the range `[0, n]`, implement a function to identify the missing element in the array. All numbers except one are present in the array. Find the missing number.
 
 ---

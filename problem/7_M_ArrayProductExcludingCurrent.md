@@ -1,14 +1,11 @@
-# Array Product Excluding Current
-[Link](https://www.greatfrontend.com/interviews/study/blind75/questions/algo/array-product-excluding-current)
-**Status**: Completed  
-**Languages**: Any  
-**Difficulty**: Medium  
-**Recommended duration during interviews**: 15 mins  
-**Users completed**: 1.48k done  
+# [✨ Array Product Excluding Current](https://www.greatfrontend.com/interviews/study/blind75/questions/algo/array-product-excluding-current) 🧩
 
 ---
 
-## Problem  
+**Difficulty:** 🟡 Medium  
+
+---
+## Problem Statement
 Given an array of integers `numbers`, return a new array `result` where each element `result[i]` represents the product of all the elements in `numbers` except for `numbers[i]`.
 
 ---

@@ -1,5 +1,11 @@
-# End of Array Reachable
+# [✨ End of Array Reachable](https://www.greatfrontend.com/interviews/study/blind75/questions/algo/array-reachable-end) 🧩
 
+---
+
+**Difficulty:** 🟡 Medium  
+
+---
+## Problem Statement
 Given an array of integers `numbers` where each element in the array represents the maximum number of positions that can be moved forward from that index; it is acceptable to move by fewer positions.
 
 Determine whether it is possible to reach the last index of the array by starting from the first index. Return `true` if it can be reached and `false` otherwise.

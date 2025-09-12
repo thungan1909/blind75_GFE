@@ -1,12 +1,11 @@
-# Smallest element in rotated sorted array
-
-**Status:** Completed  
-**Difficulty:** Medium  
-**Recommended duration during interviews:** 25 minutes  
+# [✨ Smallest element in rotated sorted array](https://www.greatfrontend.com/interviews/study/blind75/questions/algo/array-smallest-in-rotated) 🧩
 
 ---
 
-## Problem
+**Difficulty:** 🟡 Medium  
+
+---
+## Problem Statement
 
 Given a **sorted and rotated array** `numbers` containing unique elements, find and return the **minimum element** in this array.
 
@@ -44,7 +43,5 @@ Explanation: The original array `[-5,-4,2,6,7,8]` was rotated 3 times.
 - `1 <= numbers.length <= 1000`  
 - `-10,000 <= numbers[i] <= 10,000`  
 
----
 
-## Solution (JavaScript)
 

@@ -1,6 +1,11 @@
-# Maximum Sum in Contiguous Array
+# [✨ Maximum Sum in Contiguous Array](https://www.greatfrontend.com/interviews/study/blind75/questions/algo/array-maximum-sum-contiguous) 🧩
 
-## Problem
+---
+
+**Difficulty:** 🟡 Medium  
+
+---
+## Problem Statement
 Given an array of integers `numbers`, determine the subarray that has the highest sum and return that sum.
 
 A subarray is a contiguous segment of an array where all elements are taken from consecutive indices, preserving their order, such as `[2, 3]` in `[1, 2, 3, 4]`.  

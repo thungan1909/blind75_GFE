@@ -3,10 +3,9 @@
 ---
 
 **Difficulty:** 🟢 Easy  
-**Recommended duration to spend during interviews:** ⏱️ 25 mins  
 
 ---
-
+## Problem Statement
 Given a string `str` consisting of characters such as `'('`, `')'`, `'{'`, `'}'`, `'['` and `']'`, determine if the input string is properly **balanced**.
 
 ---

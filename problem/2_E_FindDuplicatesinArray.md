@@ -1,7 +1,12 @@
-# Find Duplicates in Array
----
-[Link](https://www.greatfrontend.com/interviews/study/blind75/questions/algo/array-find-duplicate)
 
+# [✨Find Duplicates in Array](https://www.greatfrontend.com/interviews/study/blind75/questions/algo/array-find-duplicate) 🧩
+
+---
+
+**Difficulty:** 🟢 Easy  
+
+---
+## Problem Statement
 Given an array of integers `numbers`, determine whether the array contains any duplicate values.  
 A duplicate is defined as any number that appears more than once in the array.
 

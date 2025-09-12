@@ -1,12 +1,8 @@
-# Find Element in Rotated Array
-[Link](https://www.greatfrontend.com/interviews/study/blind75/questions/algo/array-rotated-finds)
+# [✨ Find Element in Rotated Array](hhttps://www.greatfrontend.com/interviews/study/blind75/questions/algo/array-rotated-finds) 🧩
 
-**Status:** Completed  
+---
 
-**Languages:**  
-**Difficulty:** Medium  
-**Recommended duration during interviews:** 30 mins  
-**Users completed:** 776 done  
+**Difficulty:** 🟡 Medium  
 
 ---
 
