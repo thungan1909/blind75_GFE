@@ -1,5 +1,6 @@
 import smallestInRotatedArray from "./solution/10_M_SmallestElementInRotatedSortedArray.js";
 import kthSmallestElementInABst from "./solution/11_M_BinarySearchTreeKthSmallestElement.js";
+import BSTLowestCommonAncestor from "./solution/12_M_BinarySearchTreeLowestCommonAncestor.js";
 import isBalancedBrackets from "./solution/1_E_BalancedBrackets.js";
 import findDuplicates from "./solution/2_E_FindDuplicatesinArray.js";
 import findMissingNumberInSequence from "./solution/3_E_FindMissingNumberinSequence.js";
@@ -68,12 +69,23 @@ import findInRotatedArray from "./solution/9_M_FindElementinRotatedArray.js";
 // console.log(smallestInRotatedArray([3, 4, 1, 2])); 1
 // console.log(smallestInRotatedArray([6, 7, 8, -5, -4, 2])); -5
 
-// Q11. Binary Search Tree Kth Smallest Element
-const root = {
-  val: 7,
-  left: { val: 3, left: { val: 1, left: null, right: null }, right: { val: 5, left: null, right: null } },
-  right: { val: 10, left: { val: 8, left: null, right: null }, right: { val: 12, left: null, right: null } },
-};
+// // Q11. Binary Search Tree Kth Smallest Element
+// const root = {
+//   val: 7,
+//   left: { val: 3, left: { val: 1, left: null, right: null }, right: { val: 5, left: null, right: null } },
+//   right: { val: 10, left: { val: 8, left: null, right: null }, right: { val: 12, left: null, right: null } },
+// };
 
-console.log(kthSmallestElementInABst(root, 2)); // 3
-console.log(kthSmallestElementInABst(root, 5)); // 8
+// console.log(kthSmallestElementInABst(root, 2)); // 3
+// console.log(kthSmallestElementInABst(root, 5)); // 8
+
+// Q12.Binary Search Tree Lowest Common Ancestor
+const a = root.left.left;  // Node 10
+const b = root.left.right; // Node 25
+const lca1 = BSTLowestCommonAncestor(root, a, b);
+console.log(`LCA of ${a.val} and ${b.val} is: ${lca1.val}`); // Output: 20
+
+const c = root.right.left.right;  // Node 45
+const d = root.right.right.right; // Node 70
+const lca2 = BSTLowestCommonAncestor(root, c, d);
+console.log(`LCA of ${c.val} and ${d.val} is: ${lca2.val}`); // Output: 50
