@@ -1,4 +1,5 @@
 import smallestInRotatedArray from "./solution/10_M_SmallestElementInRotatedSortedArray.js";
+import kthSmallestElementInABst from "./solution/11_M_BinarySearchTreeKthSmallestElement.js";
 import isBalancedBrackets from "./solution/1_E_BalancedBrackets.js";
 import findDuplicates from "./solution/2_E_FindDuplicatesinArray.js";
 import findMissingNumberInSequence from "./solution/3_E_FindMissingNumberinSequence.js";
@@ -63,6 +64,16 @@ import findInRotatedArray from "./solution/9_M_FindElementinRotatedArray.js";
 // console.log(findInRotatedArray([4],2)) //-1
 
 //Q10. Smallest element in rotated sorted array
-console.log(smallestInRotatedArray([1, 2, 3, 4]));  1
-console.log(smallestInRotatedArray([3, 4, 1, 2])); 1
-console.log(smallestInRotatedArray([6, 7, 8, -5, -4, 2])); -5
+// console.log(smallestInRotatedArray([1, 2, 3, 4]));  1
+// console.log(smallestInRotatedArray([3, 4, 1, 2])); 1
+// console.log(smallestInRotatedArray([6, 7, 8, -5, -4, 2])); -5
+
+// Q11. Binary Search Tree Kth Smallest Element
+const root = {
+  val: 7,
+  left: { val: 3, left: { val: 1, left: null, right: null }, right: { val: 5, left: null, right: null } },
+  right: { val: 10, left: { val: 8, left: null, right: null }, right: { val: 12, left: null, right: null } },
+};
+
+console.log(kthSmallestElementInABst(root, 2)); // 3
+console.log(kthSmallestElementInABst(root, 5)); // 8
