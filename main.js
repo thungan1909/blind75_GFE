@@ -1,6 +1,7 @@
 import smallestInRotatedArray from "./solution/10_M_SmallestElementInRotatedSortedArray.js";
 import kthSmallestElementInABst from "./solution/11_M_BinarySearchTreeKthSmallestElement.js";
 import BSTLowestCommonAncestor from "./solution/12_M_BinarySearchTreeLowestCommonAncestor.js";
+import binarySearchTreeValidate from "./solution/13_M_ValidateBinarySearchTree.js";
 import isBalancedBrackets from "./solution/1_E_BalancedBrackets.js";
 import findDuplicates from "./solution/2_E_FindDuplicatesinArray.js";
 import findMissingNumberInSequence from "./solution/3_E_FindMissingNumberinSequence.js";
@@ -79,13 +80,58 @@ import findInRotatedArray from "./solution/9_M_FindElementinRotatedArray.js";
 // console.log(kthSmallestElementInABst(root, 2)); // 3
 // console.log(kthSmallestElementInABst(root, 5)); // 8
 
-// Q12.Binary Search Tree Lowest Common Ancestor
-const a = root.left.left;  // Node 10
-const b = root.left.right; // Node 25
-const lca1 = BSTLowestCommonAncestor(root, a, b);
-console.log(`LCA of ${a.val} and ${b.val} is: ${lca1.val}`); // Output: 20
+// // Q12. Binary Search Tree Lowest Common Ancestor
+// const root = {
+//   val: 7,
+//   left: {
+//     val: 3,
+//     left: { val: 1, left: null, right: null },
+//     right: { val: 5, left: null, right: null },
+//   },
+//   right: {
+//     val: 10,
+//     left: { val: 8, left: null, right: null },
+//     right: { val: 12, left: null, right: null },
+//   },
+// };
 
-const c = root.right.left.right;  // Node 45
-const d = root.right.right.right; // Node 70
-const lca2 = BSTLowestCommonAncestor(root, c, d);
-console.log(`LCA of ${c.val} and ${d.val} is: ${lca2.val}`); // Output: 50
+// // Example 1: LCA of 1 and 5 = 3
+// const a = root.left.left;   // Node 1
+// const b = root.left.right;  // Node 5
+// const lca1 = BSTLowestCommonAncestor(root, a, b);
+// console.log(`LCA of ${a.val} and ${b.val} is: ${lca1.val}`); // Output: 3
+
+// // Example 2: LCA of 8 and 12 = 10
+// const c = root.right.left;   // Node 8
+// const d = root.right.right;  // Node 12
+// const lca2 = BSTLowestCommonAncestor(root, c, d);
+// console.log(`LCA of ${c.val} and ${d.val} is: ${lca2.val}`); // Output: 10
+
+// // Example 3: LCA of 5 and 12 = 7 (the root)
+// const e = root.left.right;   // Node 5
+// const f = root.right.right;  // Node 12
+// const lca3 = BSTLowestCommonAncestor(root, e, f);
+// console.log(`LCA of ${e.val} and ${f.val} is: ${lca3.val}`); // Output: 7
+
+
+//Q13. Validate Binary Search Tree
+ const root1 = {
+  val: 10,
+  left: { val: 5, left: { val: 1, left: null, right: null }, right: { val: 8, left: null, right: null } },
+  right: { val: 15, left: { val: 12, left: null, right: null }, right: { val: 20, left: null, right: null } },
+};
+console.log(binarySearchTreeValidate(root1)); // true 
+
+const root2 = {
+  val: 5,
+  left: { val: 1, left: null, right: null },
+  right: { val: 4, left: null, right: { val: 3, left: null, right: null } },
+};
+console.log(binarySearchTreeValidate(root2)); // false 
+
+const root3 = {
+  val: 3,
+  left: { val: 2, left: { val: 1, left: null, right: null }, right: null },
+  right: { val: 4, left: null, right: { val: 5, left: null, right: null } },
+};
+console.log(binarySearchTreeValidate(root3)); // true 
