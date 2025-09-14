@@ -2,6 +2,7 @@ import smallestInRotatedArray from "./solution/10_M_SmallestElementInRotatedSort
 import kthSmallestElementInABst from "./solution/11_M_BinarySearchTreeKthSmallestElement.js";
 import BSTLowestCommonAncestor from "./solution/12_M_BinarySearchTreeLowestCommonAncestor.js";
 import binarySearchTreeValidate from "./solution/13_M_ValidateBinarySearchTree.js";
+import binaryTreeEqual from "./solution/14_E_BinaryTreeEqual.js";
 import isBalancedBrackets from "./solution/1_E_BalancedBrackets.js";
 import findDuplicates from "./solution/2_E_FindDuplicatesinArray.js";
 import findMissingNumberInSequence from "./solution/3_E_FindMissingNumberinSequence.js";
@@ -115,23 +116,51 @@ import findInRotatedArray from "./solution/9_M_FindElementinRotatedArray.js";
 
 
 //Q13. Validate Binary Search Tree
- const root1 = {
-  val: 10,
-  left: { val: 5, left: { val: 1, left: null, right: null }, right: { val: 8, left: null, right: null } },
-  right: { val: 15, left: { val: 12, left: null, right: null }, right: { val: 20, left: null, right: null } },
-};
-console.log(binarySearchTreeValidate(root1)); // true 
+//  const root1 = {
+//   val: 10,
+//   left: { val: 5, left: { val: 1, left: null, right: null }, right: { val: 8, left: null, right: null } },
+//   right: { val: 15, left: { val: 12, left: null, right: null }, right: { val: 20, left: null, right: null } },
+// };
+// console.log(binarySearchTreeValidate(root1)); // true 
 
-const root2 = {
-  val: 5,
-  left: { val: 1, left: null, right: null },
-  right: { val: 4, left: null, right: { val: 3, left: null, right: null } },
-};
-console.log(binarySearchTreeValidate(root2)); // false 
+// const root2 = {
+//   val: 5,
+//   left: { val: 1, left: null, right: null },
+//   right: { val: 4, left: null, right: { val: 3, left: null, right: null } },
+// };
+// console.log(binarySearchTreeValidate(root2)); // false 
 
-const root3 = {
-  val: 3,
-  left: { val: 2, left: { val: 1, left: null, right: null }, right: null },
-  right: { val: 4, left: null, right: { val: 5, left: null, right: null } },
-};
-console.log(binarySearchTreeValidate(root3)); // true 
+// const root3 = {
+//   val: 3,
+//   left: { val: 2, left: { val: 1, left: null, right: null }, right: null },
+//   right: { val: 4, left: null, right: { val: 5, left: null, right: null } },
+// };
+// console.log(binarySearchTreeValidate(root3)); // true 
+
+
+//Q14. Binary Tree Equal
+
+class TreeNode {
+  constructor(val, left = null, right = null) {
+    this.val = val;
+    this.left = left;
+    this.right = right;
+  }
+}
+
+const a1 = new TreeNode(1, new TreeNode(2), null);
+const b1 = new TreeNode(1, null, new TreeNode(2));
+console.log("Example 1:", binaryTreeEqual(a1, b1)); // false
+
+// Example 2: a = [3,null,7], b = [3,5,7]
+const a2 = new TreeNode(3, null, new TreeNode(7));
+const b2 = new TreeNode(3, new TreeNode(5), new TreeNode(7));
+console.log("Example 2:", binaryTreeEqual(a2, b2)); // false
+
+// Example 3: a = [65,null,17], b = [65,null,17]
+const a3 = new TreeNode(65, null, new TreeNode(17));
+const b3 = new TreeNode(65, null, new TreeNode(17));
+console.log("Example 3:", binaryTreeEqual(a3, b3)); // true
+
+// Extra case: both null
+console.log("Both null:", binaryTreeEqual(null, null)); // true
