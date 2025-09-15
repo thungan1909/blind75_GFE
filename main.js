@@ -4,6 +4,7 @@ import BSTLowestCommonAncestor from "./solution/12_M_BinarySearchTreeLowestCommo
 import binarySearchTreeValidate from "./solution/13_M_ValidateBinarySearchTree.js";
 import binaryTreeEqual from "./solution/14_E_BinaryTreeEqual.js";
 import binaryTreeFlip from "./solution/15_E_FlipBinaryTree.js";
+import binaryTreeLevelOrderTraversal from "./solution/16_E_BinaryTreeLevelOrderTraversal.js";
 import isBalancedBrackets from "./solution/1_E_BalancedBrackets.js";
 import findDuplicates from "./solution/2_E_FindDuplicatesinArray.js";
 import findMissingNumberInSequence from "./solution/3_E_FindMissingNumberinSequence.js";
@@ -24,15 +25,15 @@ import findInRotatedArray from "./solution/9_M_FindElementinRotatedArray.js";
 
 
 //Q2 - Find Duplicates in Array
-// console.log(findDuplicates([5,7,1,3])); //false
-// console.log(findDuplicates([10,7,0,0,9])); //true
-// console.log(findDuplicates([3,2,6,5,0,3,10,3,10,5])); //true
+/* console.log(findDuplicates([5,7,1,3])); //false
+console.log(findDuplicates([10,7,0,0,9])); //true
+console.log(findDuplicates([3,2,6,5,0,3,10,3,10,5])); //true */
 
 
 // Q3 - Find Missing Number in Sequence
-// console.log(findMissingNumberInSequence([1, 3, 0])); // 2
-// console.log(findMissingNumberInSequence([1])); // 0
-// console.log(findMissingNumberInSequence([3, 0, 4, 2, 1])); // 5
+/* console.log(findMissingNumberInSequence([1, 3, 0])); // 2
+console.log(findMissingNumberInSequence([1])); // 0
+console.log(findMissingNumberInSequence([3, 0, 4, 2, 1])); // 5 */
 
 
 // Q4. Maximum Product in Contiguous Array
@@ -167,12 +168,21 @@ import findInRotatedArray from "./solution/9_M_FindElementinRotatedArray.js";
 // console.log("Both null:", binaryTreeEqual(null, null)); // true
 
 //Q15. Flip Binary Tree
-
-const root = {
+/*const root = {
   val: 2,
   left: { val: 1, left: null, right: null },
   right: { val: 3, left: null, right: null },
 };
 
 console.log("Before:", JSON.stringify(root));
-console.log("After :", JSON.stringify(binaryTreeFlip(root)));
+console.log("After :", JSON.stringify(binaryTreeFlip(root))); */
+
+
+//16. Binary Tree Level Order Traversal
+const root = {
+  val: 1,
+  left: { val: 2, left: { val: 4 }, right: { val: 5 } },
+  right: { val: 3, left: { val: 6 }, right: { val: 7 } },
+};
+
+console.log(binaryTreeLevelOrderTraversal(root));
