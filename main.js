@@ -5,6 +5,7 @@ import binarySearchTreeValidate from "./solution/13_M_ValidateBinarySearchTree.j
 import binaryTreeEqual from "./solution/14_E_BinaryTreeEqual.js";
 import binaryTreeFlip from "./solution/15_E_FlipBinaryTree.js";
 import binaryTreeLevelOrderTraversal from "./solution/16_E_BinaryTreeLevelOrderTraversal.js";
+import binaryTreeMaximumDepth from "./solution/17_E_BinaryTreeMaximumDepth.js";
 import isBalancedBrackets from "./solution/1_E_BalancedBrackets.js";
 import findDuplicates from "./solution/2_E_FindDuplicatesinArray.js";
 import findMissingNumberInSequence from "./solution/3_E_FindMissingNumberinSequence.js";
@@ -179,10 +180,42 @@ console.log("After :", JSON.stringify(binaryTreeFlip(root))); */
 
 
 //16. Binary Tree Level Order Traversal
-const root = {
+/*  const root = {
   val: 1,
   left: { val: 2, left: { val: 4 }, right: { val: 5 } },
   right: { val: 3, left: { val: 6 }, right: { val: 7 } },
 };
 
-console.log(binaryTreeLevelOrderTraversal(root));
+console.log(binaryTreeLevelOrderTraversal(root));  */
+
+
+// 17. Binary Tree Maximum Depth
+
+function TreeNode(val, left = null, right = null) {
+  this.val = val;
+  this.left = left;
+  this.right = right;
+}
+
+const tree1 = new TreeNode(1,
+  new TreeNode(2),
+  new TreeNode(3)
+);
+
+
+const tree2 = new TreeNode(1,
+  null,
+  new TreeNode(2)
+);
+
+const tree3 = new TreeNode(1,
+  new TreeNode(2,
+    new TreeNode(4),
+    null
+  ),
+  new TreeNode(3)
+);
+
+console.log(binaryTreeMaximumDepth(tree1)); // 2
+console.log(binaryTreeMaximumDepth(tree2)); // 2
+console.log(binaryTreeMaximumDepth(tree3)); // 3
