@@ -1,29 +1,30 @@
-import smallestInRotatedArray from "./solution/10_M_SmallestElementInRotatedSortedArray.js";
-import kthSmallestElementInABst from "./solution/11_M_BinarySearchTreeKthSmallestElement.js";
-import BSTLowestCommonAncestor from "./solution/12_M_BinarySearchTreeLowestCommonAncestor.js";
-import binarySearchTreeValidate from "./solution/13_M_ValidateBinarySearchTree.js";
-import binaryTreeEqual from "./solution/14_E_BinaryTreeEqual.js";
-import binaryTreeFlip from "./solution/15_E_FlipBinaryTree.js";
-import binaryTreeLevelOrderTraversal from "./solution/16_E_BinaryTreeLevelOrderTraversal.js";
-import binaryTreeMaximumDepth from "./solution/17_E_BinaryTreeMaximumDepth.js";
-import binaryTreeMaximumPathSum from "./solution/18_H_BinaryTreeMaximumTotalPath.js";
-import isBalancedBrackets from "./solution/1_E_BalancedBrackets.js";
-import findDuplicates from "./solution/2_E_FindDuplicatesinArray.js";
-import findMissingNumberInSequence from "./solution/3_E_FindMissingNumberinSequence.js";
-import maxProductSubArray from "./solution/4_M_MaximumProductinContiguousArray.js";
-import maxSumSubArray from "./solution/5_M_MaximumSuminContiguousArray.js";
-import mostCommonElements from "./solution/6_M_MostCommonElements.js";
-import arrayProductExcludingCurrent from "./solution/7_M_ArrayProductExcludingCurrent.js";
-import arrayReachableEnd from "./solution/8_M_EndofArrayReachable.js";
-import findInRotatedArray from "./solution/9_M_FindElementinRotatedArray.js";
+// import smallestInRotatedArray from "./solution/10_M_SmallestElementInRotatedSortedArray.js";
+// import kthSmallestElementInABst from "./solution/11_M_BinarySearchTreeKthSmallestElement.js";
+// import BSTLowestCommonAncestor from "./solution/12_M_BinarySearchTreeLowestCommonAncestor.js";
+// import binarySearchTreeValidate from "./solution/13_M_ValidateBinarySearchTree.js";
+// import binaryTreeEqual from "./solution/14_E_BinaryTreeEqual.js";
+// import binaryTreeFlip from "./solution/15_E_FlipBinaryTree.js";
+// import binaryTreeLevelOrderTraversal from "./solution/16_E_BinaryTreeLevelOrderTraversal.js";
+// import binaryTreeMaximumDepth from "./solution/17_E_BinaryTreeMaximumDepth.js";
+// import binaryTreeMaximumPathSum from "./solution/18_H_BinaryTreeMaximumTotalPath.js";
+// import isBalancedBrackets from "./solution/1_E_BalancedBrackets.js";
+// import findDuplicates from "./solution/2_E_FindDuplicatesinArray.js";
+// import findMissingNumberInSequence from "./solution/3_E_FindMissingNumberinSequence.js";
+// import maxProductSubArray from "./solution/4_M_MaximumProductinContiguousArray.js";
+// import maxSumSubArray from "./solution/5_M_MaximumSuminContiguousArray.js";
+// import mostCommonElements from "./solution/6_M_MostCommonElements.js";
+// import arrayProductExcludingCurrent from "./solution/7_M_ArrayProductExcludingCurrent.js";
+// import arrayReachableEnd from "./solution/8_M_EndofArrayReachable.js";
+// import findInRotatedArray from "./solution/9_M_FindElementinRotatedArray.js";
 
-
+import isStringPalindrome from "./solution/67_E_StringPalindrome";
 
 // Q1 - Balanced Brackets
 /* console.log(isBalancedBrackets("()"));     // true
  console.log(isBalancedBrackets("([])"));   // true
  console.log(isBalancedBrackets("([)]"));   // false
  console.log(isBalancedBrackets("{[(])}")); // false  */
+
 
 
 //Q2 - Find Duplicates in Array
@@ -221,19 +222,29 @@ function TreeNode(val, left = null, right = null) {
 // console.log(binaryTreeMaximumDepth(tree2)); // 2
 // console.log(binaryTreeMaximumDepth(tree3)); // 3
 
-// Q18. Binary Tree Maximum Total Path
+// // Q18. Binary Tree Maximum Total Path
 
-const root1 = new TreeNode(4, new TreeNode(3), new TreeNode(5));
-console.log("Example 1 Output:", binaryTreeMaximumPathSum(root1)); // 12
+// const root1 = new TreeNode(4, new TreeNode(3), new TreeNode(5));
+// console.log("Example 1 Output:", binaryTreeMaximumPathSum(root1)); // 12
 
-// Example 2: root = [-2,1]
-const root2 = new TreeNode(-2, new TreeNode(1));
-console.log("Example 2 Output:", binaryTreeMaximumPathSum(root2)); // 1
+// // Example 2: root = [-2,1]
+// const root2 = new TreeNode(-2, new TreeNode(1));
+// console.log("Example 2 Output:", binaryTreeMaximumPathSum(root2)); // 1
 
-// Example 3: root = [-30,8,22,null,null,17,8]
-const root3 = new TreeNode(
-  -30,
-  new TreeNode(8),
-  new TreeNode(22, new TreeNode(17), new TreeNode(8))
-);
-console.log("Example 3 Output:", binaryTreeMaximumPathSum(root3)); // 47
+// // Example 3: root = [-30,8,22,null,null,17,8]
+// const root3 = new TreeNode(
+//   -30,
+//   new TreeNode(8),
+//   new TreeNode(22, new TreeNode(17), new TreeNode(8))
+// );
+// console.log("Example 3 Output:", binaryTreeMaximumPathSum(root3)); // 47
+
+
+//Q.17 String Palindrome
+console.log(isStringPalindrome("No 'x' in Nixon"));         // true
+console.log(isStringPalindrome("Was it a car or a cat I saw?")); // true
+console.log(isStringPalindrome("tab a cat"));               // false
+console.log(isStringPalindrome("A man, a plan, a canal: Panama")); // true
+console.log(isStringPalindrome("race a car"));              // false
+console.log(isStringPalindrome("12321"));                   // true
+console.log(isStringPalindrome("12345"));                   // false
